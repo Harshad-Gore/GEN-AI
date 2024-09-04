@@ -1,0 +1,462 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(211, 211, 211);
+  line-height: 1.6;
+  background: rgb(8, 19, 100);
+  background: linear-gradient(180deg, rgba(8, 18, 88, 1) 17%, rgba(180, 144, 245, 1) 81%);
+  overscroll-behavior-y: none;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fullscreen Background */
+.background-section {
+  height: 100vh;
+  background: url('src/club_logo-bg-img.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.logo-section {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: url('src/club-logo.png') no-repeat;
+  background-size: contain;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 3px 4px 4px 3px rgba(68, 65, 65, 1.0);
+}
+
+.club-name {
+  font-size: xx-large;
+  color: #000000;
+  margin-top: 100%;
+}
+
+/* Section Styles */
+section {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+section h2,
+section h3 {
+  color: #007bff;
+  margin: 0;
+  font-size: 2.5em;
+  /* Increased font size */
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  background: transparent;
+  /* Optional: background for better visibility */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+section p {
+  font-size: 1.5em;
+  margin-top: 60px;
+  margin: 100px 100px 0 100px;
+  padding: 20px;
+  text-align: center;
+  text-wrap:pretty;
+  /* Space for the title */
+}
+
+/* Section Title Styling */
+.section-title {
+  font-size: 2.5em;
+  margin: 0;
+  position: relative;
+  top: 0;
+  background: transparent;
+  padding: 15px;
+  z-index: 2;
+}
+
+/* Carousel Styles */
+.carousel-container {
+  position: relative;
+  width: 95vw;
+  /* Adjust width as needed */
+  height: 85vh;
+  /* Adjust height as needed */
+  overflow: hidden;
+  margin: 0 auto;
+  /* Center carousel container */
+}
+
+.carousel-arrow {
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.project-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* Smooth transition */
+  width: 300vw;
+  /* Updated width to accommodate 3 items */
+  align-items: center;
+  gap: 5vw;
+}
+
+.project-item {
+  width: 95vw;
+  /* Full viewport width */
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+}
+
+.project-content {
+  position: relative;
+  color: black;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  /* Optional: overlay for text visibility */
+  padding: 20px;
+  width: 30vw;
+  height: 78vh;
+  border-radius: 15px;
+  margin-left: 2.5px;
+  top: 2.5px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.project-item h4,
+.project-item p,
+.project-item a {
+  margin: 0;
+}
+
+.project-item a {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: underline;
+  font-size: 1.2em;
+  /* Increased font size for readability */
+}
+
+/* Footer Section */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-links {
+  flex-basis: 20%;
+  text-align: left;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  /* Increased font size */
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+.footer-links ul li a:hover{
+  color: #6f9fff;
+}
+
+.social-media {
+  flex-basis: 15%;
+  text-align: left;
+  align-items: start;
+}
+
+.social-media h4 {
+  font-size: 20px;
+  /* Increased font size */
+  margin-bottom: 15px;
+}
+
+/* .social-media a {
+  margin-left: 10px;
+} */
+
+.social-media img {
+  width: auto;
+  height: 24px;
+  margin: 0 7px 0 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social-media {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  section h2,
+  section h3 {
+    font-size: 1.8em;
+    /* Adjusted font size for smaller screens */
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #171d35;
+  /* Make sure this contrasts with the background */
+  color: #333;
+  /* Text color */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* Higher z-index to be on top of other elements */
+}
+
+/* Ensure other elements don't overlap */
+section {
+  margin-top: 30px;
+  /* Add margin to prevent content from overlapping the navbar */
+}
+
+/* Additional styling to improve visibility */
+.navbar a {
+  color: #333;
+  /* Ensure the links in the navbar are visible */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.logo img {
+  padding-top: 4px;
+  height: 32px;
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 3%;
+  gap: 25px;
+  /* Add spacing between elements */
+}
+
+.profile-picture img,
+.menu-bar img,
+.home-picture img {
+  height: 30px;
+  width: auto;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-picture img:hover,
+.menu-bar img:hover,
+.home-picture img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.InputContainer {
+  width: 300px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(227, 213, 255), rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.input {
+  width: 280px;
+  height: 28px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  transform: translateX(0);
+}
+
+.sidebar.open {
+  transform: translateX(-300px);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  padding-bottom: 10px;
+}
+
+.sidebar-search {
+  width: calc(100% - 40px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 15px;
+}
+
+.sidebar .closebtn {
+  font-size: 32px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-links a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.sidebar-links a:hover {
+  background-color: #F5F8FE;
+  color: #6f9fff;
+}
+
+.sidebar hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.sidebar .icon {
+  font-size: 18px;
+  color: #000;
+}
+
+.navbar-content a img {
+  filter: invert(100%);
+}
+
+.navbar-content img {
+  filter: invert(100%)
+}
