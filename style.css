@@ -187,67 +187,63 @@ section p {
 
 /* Footer Section */
 footer {
-  background-color: #343a40;
-  color: #ffffff;
-  padding: 40px 20px;
+  background-color: #333;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.footer-links {
-  flex-basis: 20%;
-  text-align: left;
+.footer-section-innovation,
+.footer-section-excellence,
+.footer-section-competition {
+  flex: 1;
+  margin: 0 10px;
 }
 
-.footer-links h4 {
-  font-size: 20px;
-  /* Increased font size */
-  margin-bottom: 15px;
-}
-
-.footer-links ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.footer-links ul li {
+.footer-section-innovation h2,
+.footer-section-excellence h2,
+.footer-section-competition h2 {
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.footer-links ul li a {
+.footer-section-innovation p,
+.footer-section-excellence p,
+.footer-section-competition p,
+.footer-section-excellence a {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 16px;
-}
-.footer-links ul li a:hover{
-  color: #6f9fff;
 }
 
-.social-media {
-  flex-basis: 15%;
-  text-align: left;
-  align-items: start;
+.footer-social-icons a {
+  margin-right: 10px;
 }
 
-.social-media h4 {
-  font-size: 20px;
-  /* Increased font size */
-  margin-bottom: 15px;
+.footer-email-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 10px;
 }
 
-/* .social-media a {
-  margin-left: 10px;
-} */
-
-.social-media img {
-  width: auto;
-  height: 24px;
-  margin: 0 7px 0 0;
+.footer-join-button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border-radius: 10px;
 }
-
+.footer-join-button:hover{
+  background-color:#212121;
+}
+.footer-social-icons img {
+  height: 24px; /* Adjust the size as needed */
+  width: auto; /* Adjust the size as needed */
+}
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .project-item {
